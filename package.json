@@ -1,0 +1,20 @@
+{
+  "name": "tugas-pertama-yuk",
+  "version": "1.0.0",
+  "description": "ATAPI Mochai Tugas Pertama",
+  "main": "index.js",
+  "directories": {
+    "run": "running" 
+  },
+  "scripts": {
+    "run-api": "mocha ./running --recursive --reporter mochawesome --reporter-options reportDir=reports/ --timeout 30000"
+  },
+  "author": "Misrul Aziz",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^9.2.2",
+    "mochawesome": "^7.1.3",
+    "supertest": "^6.2.2"
+  }
+}

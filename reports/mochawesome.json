@@ -1,0 +1,199 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-04-02T17:18:01.543Z",
+    "end": "2022-04-02T17:18:03.510Z",
+    "duration": 1967,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "679afdee-11ee-4d83-8dd2-9e0f964a389e",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "00c04cf6-a048-430b-b80d-d16411b1699c",
+          "title": "@get @getUsersList EDITH - Get User List GET /api/users",
+          "fullFile": "C:\\Users\\Misrul Aziz\\Documents\\Aziz\\LinkAja\\SDET\\ATAPI-Mochai\\tugas-pertama-yuk\\running\\get_users_list.js",
+          "file": "\\running\\get_users_list.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "As a User, I should be able to successfully request GET user list",
+              "fullTitle": "@get @getUsersList EDITH - Get User List GET /api/users As a User, I should be able to successfully request GET user list",
+              "timedOut": false,
+              "duration": 438,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//buat konstanta \"response\" dan memanggil fungsi \"getPing\"\nconst response = await getUsers();\n//konstanta \"response\" dilakukan validasi\n//actual results == expected results, jika tidak sesuai maka ditampilkan response actualnya\n\t\t\texpect(response.status).to.equal(200, response.body.message);",
+              "err": {},
+              "uuid": "9d87adb1-5bf0-49aa-8c12-b07a2726c706",
+              "parentUUID": "00c04cf6-a048-430b-b80d-d16411b1699c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "@getListDoang As a User, I should be able to successfully request GET single user",
+              "fullTitle": "@get @getUsersList EDITH - Get User List GET /api/users @getListDoang As a User, I should be able to successfully request GET single user",
+              "timedOut": false,
+              "duration": 106,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//buat konstanta \"response\" dan memanggil fungsi \"getPing\"\nconst response = await getSingleUser();\n//konstanta \"response\" dilakukan validasi\n//actual results == expected results, jika tidak sesuai maka ditampilkan response actualnya\nexpect(response.status).to.equal(200, response.body.message);",
+              "err": {},
+              "uuid": "75ab9c1c-6a8b-49c7-8b0c-cd76746d591a",
+              "parentUUID": "00c04cf6-a048-430b-b80d-d16411b1699c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9d87adb1-5bf0-49aa-8c12-b07a2726c706",
+            "75ab9c1c-6a8b-49c7-8b0c-cd76746d591a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 544,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "b462e380-9f22-482a-9565-1d0b173890d0",
+          "title": "@post @postCreateUser EDITH - Post Create User POST /api/users",
+          "fullFile": "C:\\Users\\Misrul Aziz\\Documents\\Aziz\\LinkAja\\SDET\\ATAPI-Mochai\\tugas-pertama-yuk\\running\\post_users.js",
+          "file": "\\running\\post_users.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "@post As a User, I should be able to successfully request POST create user",
+              "fullTitle": "@post @postCreateUser EDITH - Post Create User POST /api/users @post As a User, I should be able to successfully request POST create user",
+              "timedOut": false,
+              "duration": 751,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//buat konstanta \"response\" dan memanggil fungsi \"getPing\"\nconst response = await postCreateUser(payload);\nconsole.log(response.body);\n//konstanta \"response\" dilakukan validasi\n//actual results == expected results, jika tidak sesuai maka ditampilkan response actualnya\n\t\t\texpect(response.status).to.equal(201, 'Salah nih om');",
+              "err": {},
+              "uuid": "d66a561f-aed9-41b1-bb39-d48376469753",
+              "parentUUID": "b462e380-9f22-482a-9565-1d0b173890d0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d66a561f-aed9-41b1-bb39-d48376469753"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 751,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "2263109e-eabb-4c06-a108-e675d423b16d",
+          "title": "@put @putUpdateUser EDITH - Put Update User PUT /api/users",
+          "fullFile": "C:\\Users\\Misrul Aziz\\Documents\\Aziz\\LinkAja\\SDET\\ATAPI-Mochai\\tugas-pertama-yuk\\running\\put_users.js",
+          "file": "\\running\\put_users.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "As a User, I should be able to successfully request PUT update user",
+              "fullTitle": "@put @putUpdateUser EDITH - Put Update User PUT /api/users As a User, I should be able to successfully request PUT update user",
+              "timedOut": false,
+              "duration": 661,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//buat konstanta \"response\" dan memanggil fungsi \"getPing\"\nconst response = await putUsers(payloadUpdate, 1);\nconsole.log(response.body);\n//konstanta \"response\" dilakukan validasi\n//actual results == expected results, jika tidak sesuai maka ditampilkan response actualnya\n\t\t\texpect(response.status).to.equal(200, 'Salah nih om');",
+              "err": {},
+              "uuid": "ee1dc4e1-134b-4a76-aed2-db1f0323a7f9",
+              "parentUUID": "2263109e-eabb-4c06-a108-e675d423b16d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ee1dc4e1-134b-4a76-aed2-db1f0323a7f9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 661,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 30000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.2.2"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports/"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
